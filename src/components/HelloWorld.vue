@@ -1,14 +1,14 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
+    <h2>งานในตอนนี้</h2>
     <ul>
       <li>
         <a
           href="https://vuejs.org"
           target="_blank"
         >
-          Core Docs
+          งานส่วนตัว
         </a>
       </li>
       <li>
@@ -16,7 +16,7 @@
           href="https://forum.vuejs.org"
           target="_blank"
         >
-          Forum
+          งานออกค่าย
         </a>
       </li>
       <li>
@@ -24,7 +24,7 @@
           href="https://chat.vuejs.org"
           target="_blank"
         >
-          Community Chat
+          งานชมรม
         </a>
       </li>
       <li>
@@ -32,27 +32,19 @@
           href="https://twitter.com/vuejs"
           target="_blank"
         >
-          Twitter
-        </a>
-      </li>
-      <br>
-      <li>
-        <a
-          href="http://vuejs-templates.github.io/webpack/"
-          target="_blank"
-        >
-          Docs for This Template
+          งานประชาสัมพันธ์
         </a>
       </li>
     </ul>
-    <h2>Ecosystem</h2>
+    <br>
+    <h2>เกี่ยวกับตัวฉัน</h2>
     <ul>
       <li>
         <a
           href="http://router.vuejs.org/"
           target="_blank"
         >
-          vue-router
+          บทความยามว่าง
         </a>
       </li>
       <li>
@@ -60,7 +52,7 @@
           href="http://vuex.vuejs.org/"
           target="_blank"
         >
-          vuex
+          แบบเสื้อ
         </a>
       </li>
       <li>
@@ -68,7 +60,7 @@
           href="http://vue-loader.vuejs.org/"
           target="_blank"
         >
-          vue-loader
+         หนังสือออนไลน์
         </a>
       </li>
       <li>
@@ -76,7 +68,7 @@
           href="https://github.com/vuejs/awesome-vue"
           target="_blank"
         >
-          awesome-vue
+          รอ
         </a>
       </li>
     </ul>
@@ -88,7 +80,7 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Welcome To Error Never Die'
     }
   }
 }
