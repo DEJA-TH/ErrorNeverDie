@@ -4,85 +4,54 @@
     <h2>งานในตอนนี้</h2>
     <ul>
       <li>
-        <a
-          href="https://vuejs.org"
-          target="_blank"
-        >
-          งานส่วนตัว
-        </a>
+        <a href="https://vuejs.org" target="_blank">งานส่วนตัว</a>
       </li>
       <li>
-        <a
-          href="https://forum.vuejs.org"
-          target="_blank"
-        >
-          งานออกค่าย
-        </a>
+        <a href="https://forum.vuejs.org" target="_blank">งานออกค่าย</a>
       </li>
       <li>
-        <a
-          href="https://chat.vuejs.org"
-          target="_blank"
-        >
-          งานชมรม
-        </a>
+        <a href="https://chat.vuejs.org" target="_blank">งานชมรม</a>
       </li>
       <li>
-        <a
-          href="https://twitter.com/vuejs"
-          target="_blank"
-        >
-          งานประชาสัมพันธ์
-        </a>
+        <a href="https://twitter.com/vuejs" target="_blank">งานประชาสัมพันธ์</a>
       </li>
     </ul>
     <br>
     <h2>เกี่ยวกับตัวฉัน</h2>
     <ul>
       <li>
-        <a
-          href="http://router.vuejs.org/"
-          target="_blank"
-        >
-          บทความยามว่าง
-        </a>
+        <a href="http://router.vuejs.org/" target="_blank">บทความยามว่าง</a>
       </li>
       <li>
-        <a
-          href="http://vuex.vuejs.org/"
-          target="_blank"
-        >
-          แบบเสื้อ
-        </a>
+        <a href="http://vuex.vuejs.org/" target="_blank">แบบเสื้อ</a>
       </li>
       <li>
-        <a
-          href="http://vue-loader.vuejs.org/"
-          target="_blank"
-        >
-         หนังสือออนไลน์
-        </a>
+        <a href="http://vue-loader.vuejs.org/" target="_blank">หนังสือออนไลน์</a>
       </li>
       <li>
-        <a
-          href="https://github.com/vuejs/awesome-vue"
-          target="_blank"
-        >
-          รอ
-        </a>
+        <a href="https://github.com/vuejs/awesome-vue" target="_blank">รอ</a>
       </li>
     </ul>
+    <button v-on:click="logout">Logout</button>
   </div>
 </template>
 
 <script>
+import firebase from 'firebase'
 export default {
-  name: 'HelloWorld',
+  name: 'helloWorld',
   data () {
     return {
       msg: 'Welcome To Error Never Die'
     }
+},
+methods: {
+  logout: function() {
+    firebase.auth().signOut().then(()=> {
+      this.$router.replace('login')
+    })
   }
+}
 }
 </script>
 
